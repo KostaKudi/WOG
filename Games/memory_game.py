@@ -1,7 +1,7 @@
 import random
 import time
 
-from utils import clear_screen
+from Utils import clear_screen
 
 
 def generate_numbers(difficulty):

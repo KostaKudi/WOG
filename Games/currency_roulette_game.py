@@ -3,7 +3,7 @@ import requests
 from selenium.webdriver.common.keys import Keys as  Keys
 from selenium.webdriver.common.by import By
 from forex_python.converter import CurrencyRates
-from utils import clear_screen
+from Utils import clear_screen
 
 def get_exchange_rate():
     try:

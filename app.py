@@ -3,15 +3,13 @@ from Games.currency_roulette_game import play_currency_roulette_game
 from Games.guess_game import play_guess_game
 import os
 
-from utils import add_score
-
+from Utils import add_score
 
 def welcome():
     name = input('What is your name: ')
     print(f'Hi {name} and welcome to the World of Games: The Epic Journey')
     file = open('scores.txt', 'a')
     file.write(name + '\n')
-
 
 def start_play():
     def get_valid_input(prompt, valid_range):

@@ -1,5 +1,5 @@
 import random
-from utils import clear_screen
+from Utils import clear_screen
 
 def play_guess_game(difficulty):
     secret_number = random.randint(1,difficulty)
