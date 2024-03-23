@@ -3,8 +3,7 @@ from Games.currency_roulette_game import play_currency_roulette_game
 from Games.guess_game import play_guess_game
 import os
 
-from Utils import add_score
-
+from Utils import add_score, clear_screen
 def welcome():
     name = input('What is your name: ')
     print(f'Hi {name} and welcome to the World of Games: The Epic Journey')
@@ -44,8 +43,8 @@ def start_play():
 
             play_again = input('Do you want to play again a different game? (y/n)')
             if play_again.lower() != 'y':
-                print('Thank you for playing, \nBye...')
-                break
+                # Clear the screen before starting a new game
+                clear_screen()
 
 
 def play_choosen_game(select_game,selected_difficulty):
@@ -60,7 +59,6 @@ def play_choosen_game(select_game,selected_difficulty):
 
         play_again = input('Do you want to play again a different game?  (y/n) ')
         if play_again.lower() != 'y':
-            print('Thank you for playing, \nBye...')
-            break
+            clear_screen()
         else:
             start_play()

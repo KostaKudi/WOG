@@ -5,7 +5,7 @@ SCORES_FILE_NAME = "Scores.txt"
 BAD_RETURN_CODE = 7
 
 POINTS_OF_WINNING = (start_play() * 3) + 5
-SCORES_FILE = "scores.txt"
+SCORES_FILE = "Scores.txt"
 
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
